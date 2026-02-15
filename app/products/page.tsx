@@ -1,16 +1,20 @@
 'use client';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { motion } from "framer-motion";
+// 1. Import 'Variants' from framer-motion
+import { motion, Variants } from "framer-motion";
 import { Code2, Server, Database, Shield, Globe, Cpu } from "lucide-react";
 
 // --- ANIMATION HELPERS ---
-const fadeInUp = {
+
+// 2. Add ': Variants' type here
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
-const staggerContainer = {
+// 3. Add ': Variants' type here
+const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -18,11 +22,13 @@ const staggerContainer = {
   }
 };
 
-const listStagger = {
+// 4. Add ': Variants' type here
+const listStagger: Variants = {
    visible: { transition: { staggerChildren: 0.05 } }
 }
 
-const listChild = {
+// 5. Add ': Variants' type here
+const listChild: Variants = {
    hidden: { opacity: 0, x: -10 },
    visible: { opacity: 1, x: 0 }
 }
