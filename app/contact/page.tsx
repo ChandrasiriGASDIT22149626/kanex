@@ -2,11 +2,13 @@
 import React from 'react';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { motion } from "framer-motion";
+// 1. Import 'Variants' here
+import { motion, Variants } from "framer-motion";
 import { Mail, Phone, MapPin, Send, MessageCircle, Clock, Globe, ShieldCheck, Code2 } from "lucide-react";
 
 // --- ANIMATIONS ---
-const fadeInUp = {
+// 2. Add ': Variants' type definition
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { 
     opacity: 1, 
@@ -15,7 +17,8 @@ const fadeInUp = {
   }
 };
 
-const staggerContainer = {
+// 3. Add ': Variants' type definition here too
+const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -82,7 +85,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Call Sales</h3>
               <p className="text-slate-500 text-sm mb-1">Mon-Fri from 9am to 6pm EST</p>
-              <p className="text-lg font-bold text-slate-900">+94 32 22 67 785</p>
+              <p className="text-lg font-bold text-slate-900">+94 31 21 21 466</p>
            </motion.div>
 
            {/* Email Card */}
@@ -92,7 +95,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Email Support</h3>
               <p className="text-slate-500 text-sm mb-1">For project quotes & RFPs</p>
-              <p className="text-lg font-bold text-slate-900"> kanexai99@gmail.com</p>
+              <p className="text-lg font-bold text-slate-900">contact@kanex.tech</p>
            </motion.div>
 
            {/* Location Card */}
@@ -100,9 +103,9 @@ export default function ContactPage() {
               <div className="bg-slate-50 p-4 rounded-full mb-4 text-blue-600">
                  <MapPin size={32} />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Location</h3>
-              <p className="text-slate-500 text-sm">No. 120</p>
-              <p className="text-slate-500 text-sm">Colomb 3, Sri Lanka.</p>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Headquarters</h3>
+              <p className="text-slate-500 text-sm">No. 121, Tech Park,</p>
+              <p className="text-slate-500 text-sm">Colombo 03, Sri Lanka.</p>
            </motion.div>
         </motion.div>
       </section>
@@ -188,7 +191,7 @@ export default function ContactPage() {
 
       {/* --- MAP PLACEHOLDER (Optional) --- */}
       <div className="w-full h-80 bg-slate-100 flex items-center justify-center border-t border-slate-200">
-         <p className="text-slate-400 font-bold flex items-center gap-2"><MapPin /> Google Maps Integration Area</p>
+         <p className="text-slate-400 font-bold flex items-center gap-2"><MapPin size={24}/> Google Maps Integration Area</p>
       </div>
 
       <Footer />

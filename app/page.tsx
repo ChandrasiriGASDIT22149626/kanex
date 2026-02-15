@@ -4,19 +4,21 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { motion } from "framer-motion";
+// 1. Add 'Variants' to this import
+import { motion, Variants } from "framer-motion"; 
 import {
   CheckCircle, Globe, Award, Clock, ArrowRight,
-  ShieldCheck, Zap, Quote
+  ShieldCheck, Zap, Quote, Code2, Server, Smartphone, Database, Cloud
 } from "lucide-react";
 
-// --- MODERN ANIMATION VARIANTS ---
-const fadeInUp = {
+// 2. Add ': Variants' type definition here
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
 };
 
-const staggerContainer = {
+// 3. Add ': Variants' type definition here as well
+const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
