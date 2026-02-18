@@ -116,7 +116,7 @@ const Footer = () => {
             <div className="flex items-start justify-center md:justify-start gap-4 mb-6">
               <Phone className="text-blue-500 mt-1" size={24} />
               <div className="text-left">
-                <p className="text-xl font-bold text-white">076 016 2181</p>
+                <p className="text-xl font-bold text-white">077 783 0738</p>
                 <p className="text-[10px] text-gray-400 uppercase tracking-widest leading-tight">Direct Support Line</p>
               </div>
             </div>
