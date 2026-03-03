@@ -75,7 +75,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Live Chat</h3>
               <p className="opacity-90 text-sm mb-4">Instant support from our engineers.</p>
-              <p className="text-xl font-bold">+94 76 016 2181</p>
+              <p className="text-xl font-bold">+94 77 783 0738</p>
            </motion.a>
 
            {/* Phone Card */}
@@ -85,7 +85,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Call Sales</h3>
               <p className="text-slate-500 text-sm mb-1">Mon-Fri from 9am to 6pm EST</p>
-              <p className="text-lg font-bold text-slate-900">+94 31 21 21 466</p>
+              <p className="text-lg font-bold text-slate-900">+94 33 22 67 785</p>
            </motion.div>
 
            {/* Email Card */}
